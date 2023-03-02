@@ -19,7 +19,7 @@ APIparameter={
 
 }
 response=requests.get(url=url,params=APIparameter)
-print(response.json())
+#print(response.json())
 
 allData=response.json()
 hourlyData=allData["hourly"][:12]
