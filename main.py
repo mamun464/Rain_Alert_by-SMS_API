@@ -3,11 +3,12 @@ import os
 import requests
 from twilio.rest import Client
 #SMS API credentials
-YOUR API SID="" #For security Issue I didnot put My key
-YOUR AUTH TOCKEN="" #For security Issue I didnot put My key
+YOUR_API_SID="" #For security Issue I didnot put My key
+YOUR_AUTH_TOCKEN="" #For security Issue I didnot put My key
 
-account_sid = YOUR API SID
-auth_token=YOUR AUTH TOCKEN
+account_sid = YOUR_API_SID
+auth_token=YOUR_AUTH_TOCKEN
+
 #my Location
 MY_LAT=23.7796515
 MY_LNG=90.4266307
@@ -22,7 +23,7 @@ APIparameter={
 
 }
 response=requests.get(url=url,params=APIparameter)
-#print(response.json())
+print(response.json())
 
 allData=response.json()
 hourlyData=allData["hourly"][:12]
