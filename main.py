@@ -3,8 +3,11 @@ import os
 import requests
 from twilio.rest import Client
 #SMS API credentials
-account_sid = "AC36cb5adb80820193a48fa1f09687efc5"
-auth_token="1d81140c895c58b9703fac0be45dcac2"
+YOUR API SID="" #For security Issue I didnot put My key
+YOUR AUTH TOCKEN="" #For security Issue I didnot put My key
+
+account_sid = YOUR API SID
+auth_token=YOUR AUTH TOCKEN
 #my Location
 MY_LAT=23.7796515
 MY_LNG=90.4266307
